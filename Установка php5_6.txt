@@ -2,7 +2,7 @@ sudo apt remove --purge php7.* -y
 sudo apt autoremove -y
 sudo apt autoclean
 
-Установка PHP 5.6
+## Установка PHP 5.6
 apt install -y lsb-release apt-transport-https ca-certificates wget gnupg
 
 wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
@@ -16,7 +16,6 @@ apt install php5.6-curl php5.6-intl php5.6-pspell php5.6-recode php5.6-sqlite3 p
 apt install php5.6-xmlrpc php5.6-xsl php5.6-zip php5.6-mbstring php5.6-soap 
 apt install php5.6-opcache libicu72 php5.6-common php5.6-json php5.6-readline php5.6-xml
 
-Обновление Apache
-sudo service apache2 restart
+## Обновление Apache
 sudo a2enmod php5.6
 sudo service apache2 restart
